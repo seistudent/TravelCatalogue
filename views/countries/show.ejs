@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head  -->
+
+  <head>
+    <% include ../partials/head.ejs %>
+  </head>
+
+  <!-- Body  -->
+  <body>
+    <% include ../partials/navbar.ejs %>
+
+    <div id="index-banner" class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <br /><br />
+          <h1 class="header center teal-text text-lighten-2">
+            Capturing your Travel Adventures
+          </h1>
+          <div class="row center">
+            <h5 class="header col s12 light">
+              A record of the wonderful memories shared with family and friends
+            </h5>
+          </div>
+          <div class="row center">
+            <a
+              href="/countries/new"
+              id="download-button"
+              class="btn-large waves-effect waves-light teal lighten-1"
+              >Add a New Memory</a
+            >
+          </div>
+          <br /><br />
+        </div>
+      </div>
+      <div class="parallax">
+        <img src="/assets/background1.jpg" alt="Unsplashed background img 1" />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section">
+        <!--   Icon Section   -->
+        <div class="row">
+          <h5>Recall this memory?</h5>
+          <br />
+
+          <section>
+            <b>Trip Details: </b> <br /><br />
+            You travelled to <%=countries.city%>, <%=countries.country%> on
+            <%=countries.date%>
+          </section>
+          <br /><br />
+
+          <section>
+            <b>You travelled together with: </b><br />
+            <% for(let i = 0; i < countries.travellers.length; i++){ %>
+            <p><%=i+1%>) <%= countries.travellers[i].name%></p>
+            <% } %>
+          </section>
+          <br />
+          <section>
+            <b>You wanted to remember the following: </b><br /><br />
+            <%=countries.memories%>
+          </section>
+          <br /><br />
+
+          <section>
+            <a href="/countries/<%=countries._id%>/edit">Edit</a>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer teal">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">About us</h5>
+            <p class="grey-text text-lighten-4">
+              This is a project to document my travel memories. Travel opens
+              your mind, and this is a platform to retain those memories, and to
+              share those records with your family and loved ones.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Made by
+          <a class="brown-text text-lighten-3" href="http://materializecss.com"
+            >Materialize</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/js/materialize.js"></script>
+    <script src="/js/init.js"></script>
+  </body>
+</html>
