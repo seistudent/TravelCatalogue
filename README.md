@@ -40,6 +40,7 @@ In terms of future development, I plan to work on the following features:
 
 1. Include photo upload functionality
 2. Include restricted viewing capabilities based on user tags
+3. Pending heroku deployment
 
 ## Built With
 
