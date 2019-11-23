@@ -29,10 +29,11 @@ The approach I took was as follows:
 7. Incorporated style elements using Materialize
 8. Tested functionality and fixed bugs
 9. Refactor code for readability and future enhancements (set up partials folder and linked all view pages to partials)
+10. Deployed code to heroku
 
 ### Link to my live site
 
-https://seistudent.github.io/TravelCatalogue/
+https://travelcatalogue.herokuapp.com/
 
 ### Unsolved Problems
 
@@ -40,7 +41,6 @@ In terms of future development, I plan to work on the following features:
 
 1. Include photo upload functionality
 2. Include restricted viewing capabilities based on user tags
-3. Pending heroku deployment
 
 ## Built With
 

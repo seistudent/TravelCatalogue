@@ -5,7 +5,7 @@ module.exports = [
     date: "20/02/2010",
     memories:
       "This was my first trip to Singapore. It was such an amazing city! Such cleanliness, and a wonderful blend of greenery with an urban setting. I loved the Marina Bay area. Definitely coming back again soon!",
-    travellers: [{ type: Schema.Types.ObjectId, ref: "Users" }]
+    travellers: []
   },
   {
     country: "Malaysia",
@@ -13,7 +13,7 @@ module.exports = [
     date: "01/01/2016",
     memories:
       "Won a trip to travel to meet Jackie Chan and Zhang Ziyi in KL! This was the trip of a lifetime, managed to meet my childhood idols! I actually can't remember anything about KL, definitely didn't do the country justice. Need to go back again",
-    travellers: [{ type: Schema.Types.ObjectId, ref: "Users" }]
+    travellers: []
   },
   {
     country: "Indonesia",
@@ -21,7 +21,7 @@ module.exports = [
     date: "12/12/2014",
     memories:
       "It was a great family holiday with dad and mum. They're getting old and I really wanted to bring them on a well-deserved family holiday to spend some quality time today. Not all that much to do in Jakarta, but it was great for family time with each other. ",
-    travellers: [{ type: Schema.Types.ObjectId, ref: "Users" }]
+    travellers: []
   },
   {
     country: "Myanmar",
@@ -29,7 +29,7 @@ module.exports = [
     date: "12/12/2018",
     memories:
       "Brought dad and mum for the famous hot air balloon ride over Bagan, it was absolutely breathtaking! So majestic, I would definitely recommend it to all my friends. Will bring my kids there one day!",
-    travellers: [{ type: Schema.Types.ObjectId, ref: "Users" }]
+    travellers: []
   },
   {
     country: "US",
