@@ -54,7 +54,8 @@ router.get("/:id/edit", (req, res) => {
     Countries.findById(req.params.id, (err, foundCountries) => {
       res.render("countries/edit.ejs", {
         countries: foundCountries,
-        users: foundUsers
+        users: foundUsers,
+        user: req.session.currentUser
       });
     });
   });
