@@ -74,7 +74,8 @@ router.get("/:id", (req, res) => {
       //dynamically switch out any ids with the objects they reference
       // console.log(foundCountries);
       res.render("countries/show.ejs", {
-        countries: foundCountries
+        countries: foundCountries,
+        user: req.session.currentUser
       });
       //mongoose.connection.close();
     });

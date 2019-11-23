@@ -20,7 +20,7 @@ router.get("/", (req, res) => {
         user: req.session.currentUser
       });
     } else {
-      res.redirect("/sessions/new");
+      res.redirect("users/index.ejs");
     }
   });
 });
